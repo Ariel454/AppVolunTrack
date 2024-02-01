@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVolunTrack.Login">
+    <Frame BackgroundColor="Purple" BorderColor="Purple" CornerRadius="0" Margin="0">
+        <Frame BackgroundColor="BlueViolet" BorderColor="BlueViolet" CornerRadius="10" Padding="0" Margin="0">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Ingreso Usuarios" HorizontalOptions="CenterAndExpand" Margin="0,10,0,0"
+               TextColor="White" FontSize="Large"/>
+                <Image HorizontalOptions="Center" VerticalOptions="Center" 
+               Source="https://img.freepik.com/vector-gratis/dejar-bullying-concepto-ilustracion_52683-40743.jpg?w=2000"
+               WidthRequest="200" HeightRequest="200"/>
+
+                <Entry Placeholder="Usuario" x:Name="UserNameEntry" TextColor="White"/>
+                <Entry Placeholder="Contraseña" IsPassword="True" x:Name="passwordEntry" TextColor="White"/>
+                <Button Text="Iniciar sesión" Clicked="OnLoginButtonClicked" BackgroundColor="Black" Margin="20" />
+            </StackLayout>
+        </Frame>
+    </Frame>
+</ContentPage>
